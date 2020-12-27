@@ -22,4 +22,10 @@ describe('ChooseUsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have an content property which is an object', ()=> {
+    expect(component.content).toBeInstanceOf(Object)
+    expect(component.content.title).toEqual('Pick us because')
+    expect(component.content.pullFirstCol).toBeTrue()
+  })
 });

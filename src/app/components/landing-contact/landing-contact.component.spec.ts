@@ -22,4 +22,11 @@ describe('LandingContactComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have an object named content', () => {
+    expect(component.content).toBeDefined()
+    expect(component.content).toBeInstanceOf(Object)
+    expect(component.content.title).toBe('Lets discuss your needs')
+    expect(component.content.pullFirstCol).toBeFalse()
+  })
 });
