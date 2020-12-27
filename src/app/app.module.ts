@@ -14,6 +14,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LandingHeaderComponent } from './components/landing-header/landing-header.component';
 import { ServicesComponent } from './components/services/services.component';
+import { WhyChooseUsComponent } from './componets/why-choose-us/why-choose-us.component';
+import { GridComponent } from './components/grid/grid.component';
+import { ChooseUsComponent } from './components/choose-us/choose-us.component';
+import { LandingContactComponent } from './components/landing-contact/landing-contact.component';
+import { LandingFooterComponent } from './components/landing-footer/landing-footer.component';
 
 
 @NgModule({
@@ -23,7 +28,12 @@ import { ServicesComponent } from './components/services/services.component';
     NavbarComponent,
     FooterComponent,
     LandingHeaderComponent,
-    ServicesComponent
+    ServicesComponent,
+    WhyChooseUsComponent,
+    GridComponent,
+    ChooseUsComponent,
+    LandingContactComponent,
+    LandingFooterComponent
   ],
   imports: [
     BrowserModule,

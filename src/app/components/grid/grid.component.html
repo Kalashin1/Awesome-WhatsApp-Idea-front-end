@@ -1,0 +1,54 @@
+<div class="my-6 grid grid-cols-1 md:grid-cols-2 px-4" *ngIf="!content.pullFirstCol">
+  <div>
+    <img [src]="content.img" class="w-3/4 h-2/5 object-fit" />
+  </div>
+  <div class="p-4 mt-10 text-forest text-xl font-bold" style="font-family: 'andika'">
+
+    <h3 style="font-family: 'Panton'" class="my-8 capitalize text-4xl text-center">{{content.title}}</h3>
+
+    {{content.message}}
+
+    <div class="my-8 flex justify-center">
+      <a class="w-5/6 h-2/4 px-8 py-4 capitalize cursor-pointer hover:bg-lime text-white-100 rounded-md bg-grass shadow-sm text-md font-bold text-center">
+        {{content.linkText}}
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="my-6 grid grid-cols-1 md:grid-cols-2 px-4 hidden md:grid" *ngIf="content.pullFirstCol">
+  <div class="p-4 mt-10 text-forest text-xl font-bold" style="font-family: 'andika'">
+
+    <h3 style="font-family: 'Panton'" class="my-8 capitalize text-4xl text-center">{{content.title}}</h3>
+
+    {{content.message}}
+
+    <div class="my-8 flex justify-center">
+      <a class="w-5/6 h-2/4 px-8 py-4 capitalize cursor-pointer hover:bg-lime text-white-100 rounded-md bg-grass shadow-sm text-md font-bold text-center">
+        {{content.linkText}}
+      </a>
+    </div>
+  </div>
+  <div class="">
+    <img [src]="content.img" class="ml-20 w-3/5 h-2/5 object-fit" />
+  </div>
+
+</div>
+
+<div class="my-6 grid grid-cols-1 md:grid-cols-2 px-4 md:hidden" *ngIf="content.pullFirstCol">
+  <div class="">
+    <img [src]="content.img" class="ml-20 w-3/5 h-2/5 object-fit" />
+  </div>
+  <div class="p-4 mt-10 text-forest text-xl font-bold" style="font-family: 'andika'">
+
+    <h3 style="font-family: 'Panton'" class="my-8 capitalize text-4xl text-center">{{content.title}}</h3>
+
+    {{content.message}}
+
+    <div class="my-8 flex justify-center">
+      <a class="w-5/6 h-2/4 px-8 py-4 capitalize cursor-pointer hover:bg-lime text-white-100 rounded-md bg-grass shadow-sm text-md font-bold text-center">
+        {{content.linkText}}
+      </a>
+    </div>
+  </div>
+</div>
