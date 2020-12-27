@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 930px) and (min-width: 768px){
+  li a{
+    font-size: .8rem !important
+  }
+  li:nth-child(1) a{
+    color: #486B00 !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  li:nth-child(1) a{
+    color: #fff !important;
+  }
+}
+
+
+nav.nav{
+  transition: .2s all linear;
+}
+
+nav.nav:hover {
+  background: #486B00;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+
+nav.nav:hover .brand{
+  color: #fff
+}

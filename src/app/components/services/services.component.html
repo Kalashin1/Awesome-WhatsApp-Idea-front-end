@@ -1,0 +1,14 @@
+<div class="mt-10 sm:mt-48 md:mt-10">
+  <h2 class="my-4 uppercase text-center text-emerald font-bold text-5xl" style="font-family: 'Panton'">SERVICES</h2>
+  <div class="grid grid-cols-1 w-100 sm:grid-cols-2 md:grid-cols-4 my-16 gap-4 px-2 cursor-pointer justify-center items-center">
+    <div *ngFor="let service of services" class="group flex justify-center items-center w-4/4 shadow-sm flex-col bg-white-200 rounded-lg">
+      <div class="circle rounded-full shadow bg-emerald my-4 flex justify-center items-center" style="width: 100px; height: 100px">
+        <i class="icon text-white-300 text-center material-icons" style="font-size: 3rem;">{{service.icon}}</i>
+      </div>
+      <div class="title text-md lg:text-xl capitalize my-8 font-bold text-center text-forest" style="font-family: 'andika'">
+        {{service.text}}
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,15 @@
+div.header{
+  background: url(../../../assets/images/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh
+}
+
+@media screen and (max-width: 768px){
+  div{
+    background: white !important
+  }
+}
+
+

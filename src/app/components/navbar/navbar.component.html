@@ -1,0 +1,21 @@
+<div class="fixed w-full">
+  <nav style="z-index: 100" class="nav fixed w-full sm:relative flex flex-col bg-grass md:bg-transparent md:flex-row sm:justify-between">
+    <div class="flex flex-row justify-between items-center py-1 cursor-pointer">
+      <a class="text-xl brand px-1 text-white-100 md:text-grass" style="font-family: 'Panton'">
+        AWI
+      </a>
+     <a class="md:hidden mx-1 rounded p-0 border-gray-500 nav-toggler" id="nav-toggler" (click)="showLinks()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28" viewBox="0 0 48 48" ><path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"/></svg>
+     </a>
+    </div>
+    <div class="divider"></div>
+    <ul class="md:flex flex-col bg-grass md:bg-transparent text sm:flex-row link h-full md:h-16 nav" [ngClass]="hidden">
+      <li class="" *ngFor="let link of links"><a class="capitalize flex jsutify-between py-6 sm:text-sm text-xl text-white-100 sm:py-5 hover:bg-gray-500 hover:text-white px-6" href="#" style="font-family: 'andika'">
+        {{link.text}}
+        <span class="sm:pl-1 lg:pl-2 material-icons ml-auto">
+          {{link.icon}}
+        </span>
+      </a></li>
+    </ul>
+  </nav>
+</div>
