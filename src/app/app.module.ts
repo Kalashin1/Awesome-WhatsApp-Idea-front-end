@@ -18,6 +18,8 @@ import { GridComponent } from './components/grid/grid.component';
 import { ChooseUsComponent } from './components/choose-us/choose-us.component';
 import { LandingContactComponent } from './components/landing-contact/landing-contact.component';
 import { LandingFooterComponent } from './components/landing-footer/landing-footer.component';
+import { LoginComponent } from './pages/login/login.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { LandingFooterComponent } from './components/landing-footer/landing-foot
     GridComponent,
     ChooseUsComponent,
     LandingContactComponent,
-    LandingFooterComponent
+    LandingFooterComponent,
+    LoginComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

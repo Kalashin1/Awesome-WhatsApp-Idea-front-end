@@ -1,1 +1,67 @@
-<p>footer works!</p>
+<div class="text-white-200 bg-emerald">
+
+  <div class="grid grid-cols-1 md:grid-cols-6 px-12 py-6">
+    <div class="p-6 text-md font-bold grid sm:col-span-3" style="font-family: 'andika';">
+      <a class="my-4 text-2xl uppercase cursor-pointer" id="footer-title" style="font-family: 'Panton'">
+        {{footer.title}}
+      </a>
+      {{footer.message}}
+    </div>
+    <div class="py-2 md:py-6" style="font-family: 'andika'" *ngFor="let footerLink of footer.footerLinks">
+      <h4 class="text-lg font-bold capitalize hidden md:block px-4 py-2">
+        {{footerLink.title}}
+      </h4>
+      <ul class="py-2 md:py-4 flex flex-row md:flex-col">
+        <li *ngFor="let link of footerLink.links" class="cursor-pointer">
+          <a class="capitalize block hover:bg-gray-200 hover:text-gray-900 font-bold px-6 py-4">
+            {{link}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 px-12 py-2" style="font-family: 'andika';">
+    <div class="p-6 text-md font-bold">
+      <a class="my-4 text-2xl uppercase cursor-pointer grid" style="font-family: 'Panton'">
+        {{footer.newsletter.title}}
+      </a>
+      {{footer.newsletter.message}}
+
+      <div class="my-4">
+        <form class="flex w-4/4 flex-row justify-content-start items-center">
+          <div>
+            <input type="email" class="w-4/4 text-md text-black py-4 px-2 bg-white-200 rounded-lg mr-2" placeholder="Your Email Here..." />
+          </div>
+          <div>
+            <input type="submit" class="rounded-lg focus:outline-0 font-bold capitalize px-6 py-4 text-center bg-teal-500 hover:bg-white-200 hover:text-emerald focus:border-white border-black" value="Subscribe" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="p-6 text-md font-bold grid justify-end items-center">
+      <h4 class="text-md font-bold capitalize text-center mb-2 md:block px-4 py-2">
+        {{footer.social.title}}
+
+        <ul class="flex flex-row">
+          <li *ngFor="let link of footer.social.links" class="cursor-pointer ml-2">
+            <a  class="capitalize block hover:bg-gray-200 hover:text-gray-900 font-bold px-6 py-4" style="font-size: 1rem">
+              <i [ngClass]="link"></i>
+            </a>
+          </li>
+        </ul>
+      </h4>
+
+    </div>
+
+  </div>
+
+  <div class="w-full bg-forest text-white-200 font-bold text-lg">
+    <div class="container text-center py-4">
+      &copy; 2020 AWI
+    </div>
+
+  </div>
+</div>
