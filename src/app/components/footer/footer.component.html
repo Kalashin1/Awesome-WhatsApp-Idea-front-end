@@ -1,6 +1,6 @@
 <div class="text-white-200 bg-emerald">
 
-  <div class="grid grid-cols-1 md:grid-cols-6 px-12 py-6">
+  <div class="grid grid-cols-1 md:grid-cols-6 px-8 sm:px-12 py-6">
     <div class="p-6 text-md font-bold grid sm:col-span-3" style="font-family: 'andika';">
       <a class="my-4 text-2xl uppercase cursor-pointer" id="footer-title" style="font-family: 'Panton'">
         {{footer.title}}
@@ -29,12 +29,12 @@
       {{footer.newsletter.message}}
 
       <div class="my-4">
-        <form class="flex w-4/4 flex-row justify-content-start items-center">
+        <form class="flex w-4/4 flex-col sm:flex-row justify-content-start items-center">
           <div>
             <input type="email" class="w-4/4 text-md text-black py-4 px-2 bg-white-200 rounded-lg mr-2" placeholder="Your Email Here..." />
           </div>
           <div>
-            <input type="submit" class="rounded-lg focus:outline-0 font-bold capitalize px-6 py-4 text-center bg-teal-500 hover:bg-white-200 hover:text-emerald focus:border-white border-black" value="Subscribe" />
+            <input type="submit" class="my-2 rounded-lg focus:outline-0 font-bold capitalize px-12 py-4 text-center bg-teal-500 hover:bg-white-200 hover:text-emerald focus:border-white border-black" value="Subscribe" />
           </div>
         </form>
       </div>

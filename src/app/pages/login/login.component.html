@@ -1,1 +1,31 @@
+<div class="overflow-x-hidden">
+  <app-navbar [links]="links" style="background: #486b00" [medClass]="{'med:bg-transparent': false}" class="bg-grass" [whiteLogo]="{color: 'white'}"></app-navbar>
+</div>
+<app-banner [bannerText]="'Login'"></app-banner>
+
+<section class="my-8 px-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 shadow-md rounded-lg overflow-hidden">
+    <div class="bg-emerald block">
+      <img [src]="imgUrl" class="w-full h-auto"/>
+    </div>
+    <div class="my-4">
+      <form class="flex flex-col justify-content-start items-center" style="font-family: 'andika'">
+        <h3 class="my-4 text-2xl capitalize center-align cursor-pointer grid form-title" >
+          {{title}}
+        </h3>
+        <div class="my-2">
+          <input type="email" class="text-md text-black py-4 px-2 bg-white-200 rounded-lg mr-2" placeholder="Your Email Here..." />
+        </div>
+        <div class="my-2">
+          <input type="password" class="w-4/4 text-md text-black py-4 px-2 bg-white-200 rounded-lg mr-2" placeholder="Your Password Here..." />
+        </div>
+        <div class="my-2">
+          <input type="submit" style="font-family: 'andika'" class="rounded-lg focus:outline-0 text-xl font-bold capitalize px-16 py-4 text-center text-white-200 cursor-pointer bg-teal-500 hover:bg-white-200 hover:text-emerald focus:border-white border-black" value="Subscribe" />
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
 <app-footer></app-footer>

@@ -22,4 +22,14 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a list of links that contain the following link', ()=> {
+    expect(component.links).toContain({link: 'home', text: 'home', icon: 'home'})
+  })
+
+  it('should have a title and render it', () => {
+    expect(component.title).toBeDefined()
+    expect(component.title).toContain('login')
+    expect(fixture.nativeElement.querySelector('.form-title').textContent).toContain('Please login')
+  })
 });

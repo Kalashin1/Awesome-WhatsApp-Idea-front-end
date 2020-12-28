@@ -1,0 +1,9 @@
+input[type=email], input[type=password]{
+  width : 400px
+}
+
+@media screen and (max-width: 890px){
+  input[type=email], input[type=password]{
+    width : 300px !important
+  }
+}

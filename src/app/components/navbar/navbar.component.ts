@@ -12,6 +12,9 @@ export class NavbarComponent implements OnInit {
 
   @Input()links : Link[]
 
+  @Input()whiteLogo
+  @Input() medClass
+
   ngOnInit(): void {
   }
 

@@ -1,7 +1,7 @@
-<div class="fixed w-full">
-  <nav style="z-index: 100" class="nav fixed w-full sm:relative flex flex-col bg-grass md:bg-transparent md:flex-row sm:justify-between">
+<div class="fixed" style="width: 100vw;">
+  <nav style="z-index: 10000" [ngClass]="medClass" class="nav fixed w-full sm:relative flex flex-col bg-grass md:flex-row sm:justify-between">
     <div class="flex flex-row justify-between items-center py-1 cursor-pointer">
-      <a class="text-xl brand pl-4 text-white-100 md:text-grass" style="font-family: 'Panton'">
+      <a class="text-xl brand pl-2 text-white-100 md:text-grass" [ngStyle]="whiteLogo" style="font-family: 'Panton'">
         AWI
       </a>
      <a class="md:hidden mx-1 rounded p-0 border-gray-500 nav-toggler" id="nav-toggler" (click)="showLinks()">
